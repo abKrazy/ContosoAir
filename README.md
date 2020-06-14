@@ -1,4 +1,4 @@
-# This project is retired, archived, and no longer supported. You are welcome to continue to use and fork the repository.
+[![Build Status](https://dev.azure.com/arbaner/ContosoAir/_apis/build/status/abKrazy.ContosoAir?branchName=master)](https://dev.azure.com/arbaner/ContosoAir/_build/latest?definitionId=23&branchName=master)
 
 
 # Microsoft.Github CI Demo
