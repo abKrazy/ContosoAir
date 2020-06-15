@@ -4,7 +4,9 @@ trigger:
   - master
 steps:  
   - script: sudo npm install --production
-    displayName: 'sudo npm Install'  
+    displayName: 'sudo npm Install'
+  - script: sudo npm install -g jest
+    displayName: 'install jest'  
   - script: 'sudo npm test'
     displayName: 'Run unit tests'
     continueOnError: true
