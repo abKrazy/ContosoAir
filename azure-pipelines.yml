@@ -7,7 +7,7 @@ trigger:
       - master
   paths:
     exclude:
-      - azure-pipeline.yml
+      - azure-pipelines.yml
 steps:  
   - script: sudo npm install --production
     displayName: 'sudo npm Install'
