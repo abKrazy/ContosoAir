@@ -1,7 +1,12 @@
 pool:
   vmImage: ubuntu-16.04
 trigger:
-  - master
+  branches:
+    include:
+      - master
+  paths:
+    exclude:
+      - azure-pipeline.yml
 steps:  
   - script: sudo npm install --production
     displayName: 'sudo npm Install'
