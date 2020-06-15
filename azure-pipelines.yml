@@ -10,7 +10,9 @@ steps:
   - script: sudo npm install -g jest
     displayName: 'Install jest'
   - script: sudo npm install -g jest-junit
-    displayName: 'Install jest-junit'   
+    displayName: 'Install jest-junit'
+  - script: sudo npm install -g jest-junit-reporter
+    displayName: 'Install jest-junit-reporter'  
   - script: 'npm test'
     displayName: 'Run unit tests'
     continueOnError: true
