@@ -7,10 +7,8 @@ steps:
     inputs:
       command: 'custom'
       customcommand: 'install --production'
-  - task: Npm@1
-    inputs:
-      command: 'custom'
-      customcommand: 'sudo install -g jest'
+  - script: sudo npm install -g jest
+    displayName: 'Install jest'  
   - script: 'npm test'
     displayName: 'Run unit tests'
     continueOnError: true
