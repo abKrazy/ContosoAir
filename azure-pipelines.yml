@@ -2,18 +2,10 @@ pool:
   vmImage: ubuntu-16.04
 trigger:
   - master
-steps:
-  - task: Npm@1
-    inputs:
-      command: 'custom'
-      customcommand: 'install --production'
-  - script: sudo npm install -g jest
-    displayName: 'Install jest'
-  - script: sudo npm install -g jest-junit
-    displayName: 'Install jest-junit'
-  - script: sudo npm install -g jest-junit-reporter
-    displayName: 'Install jest-junit-reporter'  
-  - script: 'npm test'
+steps:  
+  - script: sudo npm install --production
+    displayName: 'sudo npm Install'  
+  - script: 'sudo npm test'
     displayName: 'Run unit tests'
     continueOnError: true
   - task: PublishTestResults@2
